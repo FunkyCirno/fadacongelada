@@ -9,6 +9,7 @@ base="$SCRIPT_DIR/Resources"
 
 echo "downloading needed depedencies"
 sudo pacman -S --needed \
+    nvim \
     hyprland \
     wofi \
     waybar \
@@ -28,7 +29,8 @@ sudo pacman -S --needed \
     kitty \
     swww
 
-
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf "$HOME/.config/nvim/.git"
 echo "Copying grub and sddm themes."
 sudo cp -r "$base/Vimix" /usr/share/grub/themes/
 sudo cp -r "$base/sugar-candy" /usr/share/sddm/themes/
