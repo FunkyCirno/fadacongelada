@@ -38,6 +38,7 @@ echo "creating directories"
 mkdir -p "$HOME/.config/wofi"
 mkdir -p "$HOME/.config/waybar"
 mkdir -p "$HOME/.config/hypr"
+sudo mkdir -p /usr/share/backgrounds/
 
 echo "Copying hyprland, wofi and waybar files."
 sudo cp -r "$base/wofi/"* "$HOME/.config/wofi/"
