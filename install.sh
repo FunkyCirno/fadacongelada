@@ -9,6 +9,8 @@ base="$SCRIPT_DIR/Resources"
 
 echo "downloading needed depedencies"
 sudo pacman -S --needed \
+    hyprland \
+    grub \
     sddm \
     qt5-graphicaleffects \
     qt5-quickcontrols \
