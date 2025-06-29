@@ -10,6 +10,8 @@ base="$SCRIPT_DIR/Resources"
 echo "downloading needed depedencies"
 sudo pacman -S --needed \
     hyprland \
+    wofi \
+    waybar \
     grub \
     sddm \
     qt5-graphicaleffects \
