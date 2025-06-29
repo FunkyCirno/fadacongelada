@@ -40,9 +40,9 @@ mkdir -p "$HOME/.config/waybar"
 mkdir -p "$HOME/.config/hypr"
 
 echo "Copying hyprland, wofi and waybar files."
-cp -r "$base/wofi/"* "$HOME/.config/wofi/"
-cp -r "$base/waybar/"* "$HOME/.config/waybar/"
-cp "$base/hyprland.conf" "$HOME/.config/hypr/"
+sudo cp -r "$base/wofi/"* "$HOME/.config/wofi/"
+sudo cp -r "$base/waybar/"* "$HOME/.config/waybar/"
+sudo cp "$base/hyprland.conf" "$HOME/.config/hypr/"
 
 echo "Copying Wallpapers"
 sudo cp "$base/Backgrounds/eva1.jpg" /usr/share/backgrounds/eva1.jpg
